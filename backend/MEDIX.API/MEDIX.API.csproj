@@ -1,0 +1,65 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
+    <PackageReference Include="CloudinaryDotNet" Version="1.27.8" />
+    <PackageReference Include="DiffPlex" Version="1.9.0" />
+    <PackageReference Include="Google.Apis.Auth" Version="1.68.0" />
+    <PackageReference Include="Hangfire.AspNetCore" Version="1.8.21" />
+    <PackageReference Include="Hangfire.SqlServer" Version="1.8.21" />
+    <PackageReference Include="MailKit" Version="4.14.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.22" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.22">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.22" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.22">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="payOS" Version="2.0.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="8.1.4" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.14.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Business\Helper\" />
+    <Folder Include="Business\Interfaces\Classification\" />
+    <Folder Include="Business\Interfaces\Community\" />
+    <Folder Include="Business\Interfaces\DiseaseBank\" />
+    <Folder Include="Business\Interfaces\UserManagement\" />
+    <Folder Include="Business\Services\Classification\" />
+    <Folder Include="Business\Services\Community\" />
+    <Folder Include="Business\Services\DiseaseBank\" />
+    <Folder Include="Business\Services\UserManagement\" />
+    <Folder Include="Business\Validators\" />
+    <Folder Include="Configurations\" />
+    <Folder Include="DataAccess\Interfaces\Classification\" />
+    <Folder Include="DataAccess\Interfaces\Community\" />
+    <Folder Include="DataAccess\Interfaces\DiseaseBank\" />
+    <Folder Include="DataAccess\Interfaces\UserManagement\" />
+    <Folder Include="DataAccess\Repositories\Classification\" />
+    <Folder Include="DataAccess\Repositories\Community\" />
+    <Folder Include="DataAccess\Repositories\DiseaseBank\" />
+    <Folder Include="DataAccess\Repositories\UserManagement\" />
+    <Folder Include="Exceptions\" />
+    <Folder Include="Migrations\" />
+    <Folder Include="Models\DTOs\" />
+    <Folder Include="Models\Entities\" />
+    <Folder Include="Models\Enums\" />
+    <Folder Include="Presentation\Classification\" />
+    <Folder Include="Presentation\Community\" />
+    <Folder Include="Presentation\DiseaseBank\" />
+    <Folder Include="Presentation\UserManagement\" />
+  </ItemGroup>
+
+</Project>
